@@ -1,5 +1,5 @@
 
-package jp.tkapp.caluculator
+package jp.tkapp.calculator
 
 /**
  * 実行クラスです。
