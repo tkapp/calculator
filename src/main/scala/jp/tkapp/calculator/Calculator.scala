@@ -11,16 +11,21 @@ object Calculator {
    * @param formula 計算式
    * @return 計算結果
    */
-  def calculate(formula: String): Double = {
+  def calculate(expression: String): Double = {
     //
-    if (formula.indexOf(" ") >= 0) {
-      calculate(formula.replaceAll(" ", ""))
-    } else if (formula.indexOf("(") >= 0) {
+    if (expression.indexOf(" ") >= 0) {
+      calculate(expression.replaceAll(" ", ""))
+    } else if (expression.indexOf("(") >= 0) {
       0
     } else {
       //
-      val items = formula.split("\\+")
-      items(0).toDouble + items(1).toDouble
+      while (true) {
+        //
+        val items = expression.split("\\+")
+        items(0).toDouble + items(1).toDouble
+      }
+
+      1
     }
   }
 }

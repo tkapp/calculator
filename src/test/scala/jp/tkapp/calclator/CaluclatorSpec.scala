@@ -15,6 +15,15 @@ class CaluclatorSpec extends Specification {
   "計算" should {
     "2項の足し算ができる" in {
       Calculator.calculate("1 + 1") == 2
+      Calculator.calculate("15 + 16") == 31
     }
+
+    "2項の引き算ができる" in {
+      Calculator.calculate("1 - 1") == 0
+    }
+
+     //"0除算"
+
+    //"-の掛け算"
   }
 }
