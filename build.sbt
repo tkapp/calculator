@@ -1,3 +1,6 @@
+name := "calculator"
+version := "0.1"
+
 libraryDependencies ++= Seq(
   "org.specs2" %% "specs2-core" % "3.8.6" % "test",
   "org.specs2" %% "specs2-junit" % "3.8.6" % "test",
@@ -8,3 +11,9 @@ libraryDependencies ++= Seq(
 )
 
 scalacOptions in Test ++= Seq("-Yrangepos")
+
+import AssemblyKeys._ // put this at the top of the file
+assemblySettings
+mainClass in assembly := Some("jp.tkapp.calculator.Main")
+
+test in assembly := {}

@@ -1,0 +1,1 @@
+java -cp ./calculator.jar jp.tkapp.calculator.Main %1
